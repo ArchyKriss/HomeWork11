@@ -1,15 +1,14 @@
 public class Main {
     //task1
-    public static int printYear(int year) {
+    public static void isYearLeap(int year) {
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
         }
-        return year;
     }
     //task2
-    public static int printRecomendation(int clientDiviseYear, int clientOS2){
+    public static void printRecomendation(int clientDiviseYear, int clientOS2){
         if(clientDiviseYear>=2015&&clientOS2==0){
             System.out.println("Установите версию приложения для iOS по ссылке");
         }else if(clientDiviseYear>=2015&&clientOS2==1){
@@ -20,7 +19,6 @@ public class Main {
         }else if(clientDiviseYear<2015&&clientOS2==1){
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        return clientDiviseYear;
     }
     //task3
     public static int calculateDistanceTime(int km) {
@@ -38,7 +36,7 @@ public class Main {
     public static void main(String[] args) {
         //task1
         int number = 100;
-        printYear(number);
+        isYearLeap(number);
 
         //task2
         int OS2 = 0;
